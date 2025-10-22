@@ -1,17 +1,18 @@
-import { defineNuxtModule, createResolver, addComponentsDir } from '@nuxt/kit';
+import { createJiti } from "file:///Users/mac/Desktop/FALP/nuxt-base-components/node_modules/jiti/lib/jiti.mjs";
 
-const module = defineNuxtModule({
-  meta: {
-    name: "nuxt-base-components",
-    configKey: "baseComponents"
+const jiti = createJiti(import.meta.url, {
+  "interopDefault": true,
+  "alias": {
+    "nuxt-base-components": "/Users/mac/Desktop/FALP/nuxt-base-components"
   },
-  setup() {
-    const { resolve } = createResolver(import.meta.url);
-    addComponentsDir({
-      path: resolve("./components"),
-      pathPrefix: false
-    });
+  "transformOptions": {
+    "babel": {
+      "plugins": []
+    }
   }
-});
+})
 
-export { module as default };
+/** @type {import("/Users/mac/Desktop/FALP/nuxt-base-components/src/module.js")} */
+const _module = await jiti.import("/Users/mac/Desktop/FALP/nuxt-base-components/src/module.ts");
+
+export default _module?.default ?? _module;

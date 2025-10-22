@@ -9,7 +9,7 @@ export default defineNuxtModule({
     const { resolve } = createResolver(import.meta.url);
 
     addComponentsDir({
-      path: resolve("./components"),
+      path: resolve("./runtime/components"),
       pathPrefix: false,
     });
   },
