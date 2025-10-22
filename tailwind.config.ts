@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss'
 
 export default {
   content: [
-    './src/runtime/components/**/*.{vue,js,ts}',
+    './src/components/**/*.{vue,js,ts}',
     './playground/**/*.vue'
   ],
   theme: {

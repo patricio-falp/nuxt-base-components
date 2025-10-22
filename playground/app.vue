@@ -8,7 +8,7 @@
         <p class="text-slate-600 leading-7">
           Los componentes en
           <code class="bg-gray-200 text-orange-600 px-3 py-1 rounded"
-            >src/runtime/components</code
+            >src/components</code
           >
           se registran como globales. Usa este playground para validar estilos y
           comportamiento antes de publicarlos.
@@ -25,8 +25,10 @@
           </thead>
           <tbody>
             <tr>
-              <td class="text-[16px] text-orange-400">BaseButton</td>
-              <td><BaseButton color="#993379" label="Botón con label" /></td>
+              <td class="text-[16px] text-orange-400">BaseButtonLibrary</td>
+              <td>
+                <BaseButtonLibrary color="#993379" label="Botón con label" />
+              </td>
               <td>
                 <code class="bg-gray-200 text-orange-600 px-3 py-1 rounded"
                   >{ label?: string; spanClass?: string; color?: string; }</code

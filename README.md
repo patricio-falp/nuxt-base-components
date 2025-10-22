@@ -38,11 +38,11 @@ Asegúrate de tener instaladas las peerDependencies (Vue, Vuetify y, si lo neces
 
 - `src/module.ts`: módulo Nuxt que registra los componentes.
 
-- `src/runtime/components/`: componentes expuestos por la librería. components,
+- `src/components/`: componentes expuestos por la librería. components,
 
 - `playground/`: proyecto Nuxt de pruebas con Vuetify y Tailwind configurados.
 
-- `dist/`: salida compilada (se genera con `npm run build` y debe versionarse). directives,```bash
+- `dist/`: salida compilada (se genera con `npm run build` y debe versionarse).
 
 - `tailwind.config.ts`: configuración compartida de Tailwind.
 
