@@ -8,15 +8,15 @@ Librería de componentes base reutilizables para proyectos Nuxt 3. Está pensada
 
 - Nuxt `^3.17.0` en los proyectos consumidores.
 
-- Vuetify `^3.7.0` como dependencia obligatoria.## Instalación## Setup
+- Vuetify `^3.7.0` como dependencia obligatoria.
 
-- Tailwind CSS `^3.4.0` como dependencia opcional.
+- Tailwind CSS `^3.4.0` como dependencia obligatoria.
 
 Revisa la documentación de [Nuxt](https://nuxt.com/docs/getting-started/introduction) para aprender más.
 
 ## Recursos utilizados
 
-- Para la contrucción y compilacion de modulo nuxt [build-module](https://nuxt.com/docs/3.x/api/commands/build-module)
+- Para la contrucción y compilación de los modulos: [build-module](https://nuxt.com/docs/3.x/api/commands/build-module)
 - Conjunto de utilidades para la creación de módulos Nuxt: [Kit Nuxt](https://nuxt.com/docs/3.x/api/kit/modules)
 
 ## Instalación de la librería en un proyecto Nuxt
@@ -31,7 +31,27 @@ npm install github:patricio-falp/nuxt-base-components
 
 Asegúrate de tener instaladas las peerDependencies (Vue, Vuetify y, si lo necesitas, Tailwind CSS).
 
-## Uso rápido
+Luego, agrega el módulo en `nuxt.config.ts`:
+
+```bash
+  modules: [
+    'nuxt-base-components',
+  ],
+```
+
+### Uso rápido
+
+Como ya esta disponible en el proyecto, puedes usar los componentes directamente en tus vistas o componentes Nuxt.
+
+Por ejemplo, para usar el componente `BaseButtonLibrary`:
+
+```vue
+<template>
+  <BaseButtonLibrary color="#993379" label="Botón con label" />
+</template>
+```
+
+**Nota:** Si quieres visualizar los componentes disponibles, puedes ejecutar el proyecto de pruebas (playground) siguiendo las instrucciones en la sección de Setup más abajo.
 
 ## Flujo de trabajo en este repositorio
 
@@ -41,15 +61,15 @@ Asegúrate de tener instaladas las peerDependencies (Vue, Vuetify y, si lo neces
 
 ## Estructura
 
+Elementos principales del repositorio:
+
 - `src/module.ts`: módulo Nuxt que registra los componentes.
 
-- `src/components/`: componentes expuestos por la librería. components,
+- `src/runtime/components/`: componentes expuestos por la librería para ser usados.
 
-- `playground/`: proyecto Nuxt de pruebas con Vuetify y Tailwind configurados.
+- `playground/`: proyecto Nuxt para probar los componentes de la librería con Vuetify y Tailwind configurados.
 
-- `dist/`: salida compilada (se genera con `npm run build` y debe versionarse).
-
-- `tailwind.config.ts`: configuración compartida de Tailwind.
+- `dist/`: salida compilada (se genera con `npm run build`).
 
 ## Setup
 
