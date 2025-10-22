@@ -14,6 +14,11 @@ Librería de componentes base reutilizables para proyectos Nuxt 3. Está pensada
 
 Revisa la documentación de [Nuxt](https://nuxt.com/docs/getting-started/introduction) para aprender más.
 
+## Recursos utilizados
+
+- Para la contrucción y compilacion de modulo nuxt [build-module](https://nuxt.com/docs/3.x/api/commands/build-module)
+- Conjunto de utilidades para la creación de módulos Nuxt: [Kit Nuxt](https://nuxt.com/docs/3.x/api/kit/modules)
+
 ## Instalación de la librería en un proyecto Nuxt
 
 ### Desde GitHub
