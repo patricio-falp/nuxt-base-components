@@ -24,6 +24,7 @@
             </tr>
           </thead>
           <tbody>
+            <!-- BaseButton -->
             <tr>
               <td class="text-[16px] text-orange-400">BaseButtonLibrary</td>
               <td>
@@ -34,6 +35,13 @@
                   >{ label?: string; spanClass?: string; color?: string; }</code
                 >
               </td>
+            </tr>
+            <tr>
+              <td class="text-[16px] text-orange-400">BaseButtonCard</td>
+              <td class="ma-2">
+                <BaseCardLibrary class="pa-3">Test de BaseCard</BaseCardLibrary>
+              </td>
+              <td>sin datos</td>
             </tr>
           </tbody>
         </v-table>
