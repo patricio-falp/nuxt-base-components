@@ -1,0 +1,38 @@
+{
+  "name": "nuxt-base-components",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/module.d.mts",
+      "default": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "types": "./dist/module.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "nuxt-module-build build --stub && nuxi dev playground",
+    "build": "nuxt-module-build build",
+    "build:playground": "nuxi build playground"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.17.0",
+    "tailwindcss": "^3.4.0",
+    "vue": "^3.3.0 || ^3.5.0",
+    "vuetify": "^3.7.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "6.12.2",
+    "@nuxt/kit": "3.17.7",
+    "@nuxt/module-builder": "^1.0.2",
+    "nuxt": "3.17.7",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0",
+    "vue": "3.5.22",
+    "vuetify": "^3.7.0",
+    "vue-tsc": "^3.0.0"
+  }
+}
