@@ -65,8 +65,28 @@ Por ejemplo, para usar el componente `BaseButtonLibrary`:
 - Verifica que los cambios en `src/` y `dist/` estén agregados antes de `git push`.
 
 ### Proceso de publicación de una nueva versión:
-```
-build → git commit → git tag → git push --tags
+Cada vez que se publique una nueva versión, sigue este flujo:
+```bash
+    # Construir el módulo
+    npm run build
+
+    # Agregar cambios
+    git add .
+
+    # Crear commit
+    git commit -m "Release vX.Y.Z"
+
+    # Publicar cambios
+    git push origin main
+
+    # Crear tag y publicarlo
+    git tag vX.Y.Z
+    git push origin vX.Y.Z
+
+    # Crear release en GitHub con el tag creado    
+
+    # Instalar en el proyecto con la nueva versión
+    npm install github:patricio-falp/nuxt-base-components#vX.Y.Z
 ```
 ## Estructura
 
