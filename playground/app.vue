@@ -1,3 +1,6 @@
+<script setup lang="ts">
+const textInput = ref("");
+</script>
 <template>
   <main
     class="min-h-screen bg-slate-100 flex flex-col items-center gap-10 py-16 px-6"
@@ -19,7 +22,7 @@
           <thead>
             <tr>
               <th class="text-left text-[16px]">Nombre componente</th>
-              <th class="text-left text-[16px]">Componentes renderizado</th>
+              <th class="text-center text-[16px]">Componentes renderizado</th>
               <th class="text-left text-[16px]">Props disponibles</th>
             </tr>
           </thead>
@@ -27,7 +30,7 @@
             <!-- BaseButton -->
             <tr>
               <td class="text-[16px] text-orange-400">BaseButtonLibrary</td>
-              <td>
+              <td class="pa-4 text-center">
                 <BaseButtonLibrary color="#993379" label="Botón con label" />
               </td>
               <td>
@@ -39,7 +42,7 @@
             <!-- BaseCardLibrary -->
             <tr>
               <td class="text-[16px] text-orange-400">BaseCardLibrary</td>
-              <td class="ma-2">
+              <td class="pa-4 text-center">
                 <BaseCardLibrary class="pa-3">Test de BaseCard</BaseCardLibrary>
               </td>
               <td>sin datos</td>
@@ -47,10 +50,28 @@
             <!-- BaseChipLibrary -->
             <tr>
               <td class="text-[16px] text-orange-400">BaseChipLibrary</td>
-              <td class="ma-2">
+              <td class="pa-4 text-center">
                 <BaseChipLibrary>Test de BaseChip</BaseChipLibrary>
               </td>
-              <td> < Slot > </td>
+              <td>< Slot ></td>
+            </tr>
+            <!-- BaseInputTextLibrary -->
+            <tr>
+              <td class="text-[16px] text-orange-400">BaseInputTextLibrary</td>
+              <td class="pa-4">
+                <BaseInputTextLibrary
+                  v-model="textInput"
+                  label="Nombre"
+                  rounded="lg"
+                  placeholder="Ingresa tu nombre"
+                />
+                <span class="mt-n2">Salida: {{ textInput }}</span>
+              </td>
+              <td>
+                <code class="bg-gray-200 text-orange-600 px-3 py-1 rounded"
+                  >{ label?: string; placeholder?: string; }</code
+                >
+              </td>
             </tr>
           </tbody>
         </v-table>
