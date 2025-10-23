@@ -3,7 +3,7 @@ import { defineNuxtModule, createResolver, addComponentsDir } from '@nuxt/kit';
 const module = defineNuxtModule({
   meta: {
     name: "nuxt-base-components",
-    version: "0.0.2",
+    version: "0.0.3",
     compatibility: {
       nuxt: "^3.0.0"
     }

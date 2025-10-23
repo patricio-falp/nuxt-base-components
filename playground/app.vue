@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const textInput = ref("");
+
+const itemsBaseSelectLibrary = ref(["option1", "option2", "option3"]);
 </script>
 <template>
   <main
@@ -70,6 +72,22 @@ const textInput = ref("");
               <td>
                 <code class="bg-gray-200 text-orange-600 px-3 py-1 rounded"
                   >{ label?: string; placeholder?: string; }</code
+                >
+              </td>
+            </tr>
+            <!-- BaseSelectLibrary -->
+            <tr>
+              <td class="text-[16px] text-orange-400">BaseSelectLibrary</td>
+              <td class="pa-4">
+                <BaseSelectLibrary
+                  label="Selecciona una opción"
+                  :items="itemsBaseSelectLibrary"
+                />
+              </td>
+              <td>
+                <code class="bg-gray-200 text-orange-600 px-3 py-1 rounded"
+                  >{ <br />label?: string; <br />
+                  items?: Array<{ text: string; value: string; }> <br />}</code
                 >
               </td>
             </tr>
