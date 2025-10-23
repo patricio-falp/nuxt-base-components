@@ -36,12 +36,21 @@
                 >
               </td>
             </tr>
+            <!-- BaseCardLibrary -->
             <tr>
-              <td class="text-[16px] text-orange-400">BaseButtonCard</td>
+              <td class="text-[16px] text-orange-400">BaseCardLibrary</td>
               <td class="ma-2">
                 <BaseCardLibrary class="pa-3">Test de BaseCard</BaseCardLibrary>
               </td>
               <td>sin datos</td>
+            </tr>
+            <!-- BaseChipLibrary -->
+            <tr>
+              <td class="text-[16px] text-orange-400">BaseChipLibrary</td>
+              <td class="ma-2">
+                <BaseChipLibrary>Test de BaseChip</BaseChipLibrary>
+              </td>
+              <td> < Slot > </td>
             </tr>
           </tbody>
         </v-table>
