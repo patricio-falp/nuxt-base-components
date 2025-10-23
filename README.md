@@ -28,6 +28,11 @@ Asegúrate de instalar las dependencias:
 ```bash
 npm install github:patricio-falp/nuxt-base-components
 ```
+o si prefieres una versión específica:
+
+```bash
+npm install github:patricio-falp/nuxt-base-components#v1.0.0
+```
 
 Asegúrate de tener instaladas las peerDependencies (Vue, Vuetify y, si lo necesitas, Tailwind CSS).
 
@@ -59,6 +64,10 @@ Por ejemplo, para usar el componente `BaseButtonLibrary`:
 
 - Verifica que los cambios en `src/` y `dist/` estén agregados antes de `git push`.
 
+### Proceso de publicación de una nueva versión:
+```
+build → git commit → git tag → git push --tags
+```
 ## Estructura
 
 Elementos principales del repositorio:
