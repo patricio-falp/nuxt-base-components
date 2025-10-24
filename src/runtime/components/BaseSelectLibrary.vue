@@ -1,10 +1,7 @@
 <script setup lang="ts">
 // [Imports]
-// - Interface
-interface ISelectMapping {
-  label: string;
-  value: any;
-}
+import type { ISelectMapping } from "../interfaces/common.interfaces";
+
 // [Props]
 interface IProps {
   label?: string;

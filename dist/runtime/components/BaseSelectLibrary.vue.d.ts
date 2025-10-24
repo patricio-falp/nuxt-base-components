@@ -1,7 +1,4 @@
-interface ISelectMapping {
-    label: string;
-    value: any;
-}
+import type { ISelectMapping } from "../interfaces/common.interfaces.js";
 interface IProps {
     label?: string;
 }
